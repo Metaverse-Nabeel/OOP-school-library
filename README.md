@@ -52,6 +52,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **[OOP School Library]**
+- **[Classes made with basic structure]**
+- **[Classes made with Inheritance]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
