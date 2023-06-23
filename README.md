@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h2><b>My Enumerables</b></h2>
+  <h2><b>OOP School Library</b></h2>
 </div>
 
 <h4 align="center"><b>Readme</b></h4>
@@ -26,9 +26,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 My Enumerables <a name="about-project"></a>
+# 📖 OOP school library <a name="about-project"></a>
 
-**My Enumerables** "In this project you will learn how to use a module inside your class. For this you will create a class MyList and a module MyEnumerable. Your module MyEnumerable will implement a subset of the functionality of Enumerable."
+**OOP school library** "In this project, you will start building your school library app. In this initial step, you will implement the classes to represent students and teachers."
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,7 +51,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[My Enumerables]**
+- **[OOP School Library]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,9 +67,9 @@ Ruby
 
 ### Setup
 
-git clone https://github.com/Metaverse-Nabeel/MyEnumerables.git
+git clone https://github.com/Metaverse-Nabeel/OOP-school-library.git
 
-cd MyEnumerables
+cd OOP-school-library
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
