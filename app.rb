@@ -33,6 +33,7 @@ class App
         elsif person.is_a?(Teacher)
           puts "[Teacher] Person created: ID: #{person.id}, Name: #{person.name}, Age: #{person.age}, " \
                "specialization: #{person.specialization}"
+
         end
       end
     end
@@ -68,7 +69,7 @@ class App
 
   def create_rental(book, person, date)
     if book && person
-      rental = Rental.new(date, book, person)
+      rental = Rental.new(book, person, date)
       book.add_rental(rental)
       person.add_rental(rental)
       puts "Rental created: Book Title: #{book.title}, Person Name: #{person.name}, Date: #{date}"

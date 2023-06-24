@@ -26,7 +26,6 @@ class Person < Nameable
     false
   end
 
-  # method that returns name
   def correct_name?
     @name
   end

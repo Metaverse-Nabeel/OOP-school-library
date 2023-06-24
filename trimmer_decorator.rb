@@ -1,8 +1,8 @@
-require_relative 'base_decorator'
+require './base_decorator'
 
 class TrimmerDecorator < BaseDecorator
-  def correct_name
-    trimmed_name = @nameable.correct_name[0...10]
-    trimmed_name.length == @nameable.correct_name.length ? trimmed_name : trimmed_name.to_s
+  def correct_name?
+    name = @nameable.correct_name?
+    name.length > 10 ? name.slice(0, 10) : name
   end
 end
