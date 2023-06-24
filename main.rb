@@ -136,7 +136,7 @@ def list_rentals_for_person
 end
 
 def exit_program
-  puts 'Thank you for using the Library Management System. Goodbye!'
+  puts 'Thank you for using the OOP Library Management System. Goodbye!'
 end
 
 def invalid_choice
