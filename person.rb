@@ -1,10 +1,10 @@
 require_relative 'nameable'
 
 class Person < Nameable
-  attr_accessor :age, :name, :rentals
+  attr_accessor :age, :name, :rentals, :parent_permission
   attr_reader :id
 
-  def initialize(age, name = 'unknown', parent_permission: true)
+  def initialize(name, age, parent_permission: true)
     super()
     @id = Random.rand(1..1000)
     @name = name
@@ -25,7 +25,8 @@ class Person < Nameable
     @name
   end
 
-  def add_rental(book, date)
-    Rental.new(date, book, self)
+  def add_rental(rental)
+    rentals << rental unless rentals.include?(rental)
+    puts "Rental added to person: Person ID: #{id}, Rental Date: #{rental.date}, Book Title: #{rental.book.title}"
   end
 end
