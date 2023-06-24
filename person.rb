@@ -1,7 +1,7 @@
-require_relative 'nameable'
+require './nameable'
 
 class Person < Nameable
-  attr_accessor :age, :name, :rentals, :parent_permission
+  attr_accessor :name, :age, :rentals, :parent_permission
   attr_reader :id
 
   def initialize(name, age, parent_permission: true)
@@ -14,14 +14,20 @@ class Person < Nameable
   end
 
   def of_age?
-    @age >= 18
+    return true if @age >= 18
+
+    false
   end
+  private :of_age?
 
   def can_use_services?
-    @age >= 18 || @parent_permission
+    return true if of_age? || @parent_permission
+
+    false
   end
 
-  def correct_name
+  # method that returns name
+  def correct_name?
     @name
   end
 

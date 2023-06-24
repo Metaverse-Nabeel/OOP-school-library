@@ -145,3 +145,5 @@ end
 def invalid_choice
   puts 'Invalid choice. Please try again.'
 end
+
+main

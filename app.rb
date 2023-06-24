@@ -33,7 +33,6 @@ class App
         elsif person.is_a?(Teacher)
           puts "[Teacher] Person created: ID: #{person.id}, Name: #{person.name}, Age: #{person.age}, " \
                "specialization: #{person.specialization}"
-
         end
       end
     end
@@ -69,7 +68,7 @@ class App
 
   def create_rental(book, person, date)
     if book && person
-      rental = Rental.new(book, person, date)
+      rental = Rental.new(date, book, person)
       book.add_rental(rental)
       person.add_rental(rental)
       puts "Rental created: Book Title: #{book.title}, Person Name: #{person.name}, Date: #{date}"
@@ -77,6 +76,7 @@ class App
       puts 'Invalid book or person!'
     end
   end
+
 
   def list_rentals_for_person_id(id)
     found_person = @people.find { |p| p.id == id }
