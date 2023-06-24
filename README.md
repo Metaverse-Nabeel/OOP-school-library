@@ -73,6 +73,8 @@ git clone https://github.com/Metaverse-Nabeel/OOP-school-library.git
 
 cd OOP-school-library
 
+ruby main.rb (To be executed to run the app)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
