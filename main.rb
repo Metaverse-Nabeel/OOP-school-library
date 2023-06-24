@@ -13,7 +13,6 @@ OPTIONS = {
 }.freeze
 
 def main
-
   loop do
     display_menu
     choice = prompt_choice
