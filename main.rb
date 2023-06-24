@@ -13,7 +13,6 @@ OPTIONS = {
 }.freeze
 
 def main
-  # display_menu
 
   loop do
     display_menu
@@ -117,7 +116,6 @@ def create_rental
   list_all_books_index
   print 'Select a book from the list (enter the index): '
   book_index = gets.chomp.to_i - 1
-
   puts "\nAvailable People:"
   list_all_people_index
   print 'Select a person from the list (enter the index): '
