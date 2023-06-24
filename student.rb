@@ -9,8 +9,7 @@ class Student < Person
     @parent_permission = parent_permission
   end
 
-  def classroom=(classroom)
-    @classroom = classroom
+  def classroom=(_classroom)
     @classroom.students << self unless @classroom.students.include?(self)
   end
 
